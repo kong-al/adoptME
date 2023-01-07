@@ -1,0 +1,142 @@
+    *{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체 */
+div.box{
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 13px;
+}
+a.main-ment{
+    display: flex;
+    justify-content: center;
+}
+
+.main-ment span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+div.line{
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    height: 1px;
+    align-self: center;
+}
+/* 로그인화면 */
+div.login{
+    margin: 50px auto;
+    width: 335px;
+    height: 280px;
+}
+div.login-pw-box label{
+    width: 85px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 40px;
+}
+div.login-id-box label{
+    width: 85px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 40px;
+}
+
+/* 로그인 아이디 아이디박스 */
+div.login-id-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 로그인화면 아이디 박스 */
+div.login-id-input input{
+    width: 309px;
+    height: 35px;
+    line-height: 1.2;
+    font-size:13px;
+    padding: 6px 12px;
+    background-color:#f9f9f9 ;
+    border: 1px solid rgb(141, 141, 141);    
+    border-radius: 5px;   
+    margin-bottom: -36px;
+  }
+div.login-id-input input:focus{
+    outline: none;
+    background-color: f9f9f9;
+    border: 1px solid #333333 ;
+  }
+
+  /* 로그인 비밀번호 비밀번호 박스 */
+div.login-pw-box{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+  /*로그인화면 비밀번호 박스 */
+div.login-pw-input input{
+    width: 309px;
+    height: 35px;
+    line-height: 1.2;
+    font-size:13px;
+    padding: 6px 12px;
+    background-color:#f9f9f9 ;
+    border: 1px solid rgb(141, 141, 141); 
+    border-radius: 5px;   
+
+  }
+  div.login-pw-input input:focus{
+    outline: none;
+    background-color: f9f9f9;
+    border: 1px solid #333333 ;   
+  }
+
+/* 로그인 미입력 오류메세지 */
+p.error-msg{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #30B9FF;
+    /* display: none; */
+}
+
+/* 로그인버튼 */
+.login-button{
+    width: 335px;
+    height: 46px;
+    color: #fff;
+    background-color: #30B9FF;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;   
+
+}
+
+/* 회원가입 아이디/비밀번호찾기 */
+div.login-choice{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+div.login-choice a{
+    font-size: 13px;
+    text-decoration:none;
+    color: #999;
+}
+
+a.joinBtn::after{
+    color: #999;
+    content: "|";
+    margin: 20px;
+    
+}
+a.admin-login{
+    font-size: 13px;
+    text-decoration:none;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

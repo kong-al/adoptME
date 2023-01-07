@@ -1,0 +1,25 @@
+.myPage{
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 40px;
+}
+
+.menuBar{
+    width: 300px;
+    /* border-right: 1px solid black; */
+    /* box-shadow: rgb(0 0 0 / 7%) 0px 0px 0px 4px; */
+    
+}
+.menuBar div{
+    margin:  40px 0px;
+}
+.menuBar div a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.board{
+    width: 750px;
+    margin:  40px 20px;
+}

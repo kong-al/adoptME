@@ -1,0 +1,149 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+    
+}
+a::after{
+    color: #333333;
+}
+body{    
+    background: #f8f8f8;
+}
+.top{
+    width: 1050px;
+    margin: 0 auto;
+}
+.left-top{
+    display: flex;
+    justify-content: flex-end;
+    width: 1050px;
+    height: 20px;
+    min-width: 1050px;
+}
+.left-top a{
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration:none;
+    color: #888888;
+}
+.left-top-box{
+    display: flex;
+    position: absolute;
+    /* right: 0px; */
+    top: 0px;
+    z-index: 20;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px;
+    height: 35px;
+}
+.blank{
+    width: 1px;
+    height: 13px;
+    margin: 0px 12px;
+    background-color: rgb(217, 217, 217);
+}
+.logo1{
+    width: 250px;
+}
+
+.middle{
+    margin-top: 20px;
+    width: 1050px;
+    min-width: 1050px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    border: 1px solid #333333;
+    border-radius: 5px;
+    height: 48px;
+    width: 350px;
+    padding-left: 10px;
+    display: flex;
+
+}
+#gnb_search{
+    border: none;
+    height: 45px;
+    width: 280px;
+    padding-left: 10px;
+    background: #f8f8f8;
+
+}
+#gnb_search:focus{
+    outline: none;
+   
+}
+.dodbogy{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    bottom: 3px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxnIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Im0yNi4wODEgMjYuMDgxLTQuMTItNC4xMk0xNi40NjcgMjMuMzM0YTYuODY3IDYuODY3IDAgMSAwIDAtMTMuNzM0IDYuODY3IDYuODY3IDAgMCAwIDAgMTMuNzM0eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==) 0px 0px no-repeat;
+}
+button{
+    border-radius:0px;
+    background-color: transparent;
+    border: none
+}
+.jjim-cart{
+    display: flex;
+}
+.cart{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjE2NCA2LjU0NykiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJtMjUuNjggMy42Ni0yLjcyIDExLjU3SDcuMzdMNC42NiAzLjY2eiIvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIyMC41MiIgY3k9IjIwLjc4IiByPSIyLjE0Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjkuODEiIGN5PSIyMC43OCIgcj0iMi4xNCIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDMuOGwxLjc2IDcuNSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==);
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+}
+.jjim{
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yOC45MjcgOC44OTNhNi40NiA2LjQ2IDAgMCAwLTkuMTM5IDBsLTEuODI5IDEuODI4LTEuODI3LTEuODI4YTYuNDYyIDYuNDYyIDAgMSAwLTkuMTQgOS4xMzhMOC44MiAxOS44Nmw4LjQzMiA4LjQzNGExIDEgMCAwIDAgMS40MTQgMGw4LjQzMy04LjQzNGgwbDEuODI4LTEuODI4YTYuNDYgNi40NiAwIDAgMCAwLTkuMTM4eiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEuNyIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==) 50% 50% no-repeat;
+}
+.category-box{
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px;
+    text-align: -webkit-center;
+}
+.category-box1{
+    width: 1050px;
+    min-width: 1050px;
+    justify-content: center;
+    display: flex;
+    height: 56px;
+    padding-top: 10px;
+
+}
+.category-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    
+    margin: 0px auto;
+}
+
+li span{
+    cursor: pointer;
+}
+
+
+ul{
+     list-style: none;
+}
+
+.category-li-box{
+    width: 300px;
+}

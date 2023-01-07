@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON'T BUY ADOPT ME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/recommend.css" rel="stylesheet" type="text/css" />
+    <link href="css/adout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <div>
+            <div class="top">
+                <!-- 헤더 왼쪽상단 -->
+                <div class="left-top">
+                    <div class="left-top-box">
+                        <a class="join" href="../join.html">회원가입</a>
+                        <div class="blank"></div>
+                        <a class="login" href="../login.html">로그인</a>
+                        <div class="blank"> </div>
+                        <a class="cscenter-name" href="../join.html">고객센터
+                            <span class="css-1o74ji9 eo4j3y50"></span>
+                        </a>
+                        <!-- <div class="cscenter-menu">
+                            <div class="cscenter-menu1">공지사항</div>
+                            <div class="cscenter-menu1">자주하는 질문</div>
+                            <div class="cscenter-menu1">1:1 문의</div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 헤더중간 -->
+                <div class="middle">
+                    <!-- 로고 -->
+                    <a href="../index.html">
+                        <div class="logo">
+                            <img src="img/logo1.png" class="logo1">
+                        </div>
+                    </a>
+                    <!-- 검색창 -->
+                    <div class="search">
+                        <div class="search-input">
+                            <input id="gnb_search" placeholder="검색어를 입력해주세요" required=""  value="">
+                            <button class="dodbogy"></button>
+                        </div>
+                    </div>
+                    <!-- 장바구니 찜하기  -->
+                    <div class="jjim-cart">
+                        <button class="jjim" aria-label="찜하기" type="button"></button>
+                        <div class="cart1">
+                            <div> <button class="cart"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 카테고리 -->
+            <div id="category" class="category-box">
+                <div class="category-box1">
+                    <div class="category-li-box"></div>
+                    <ul class="category-list">
+                        <li class="category-li">
+                            <a class="category-li-title" href="adout.html">입양</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="volunteer.html">봉사</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="review.html">입양후기</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="event.html">이벤트</a>
+                        </li>
+                    </ul>
+                    <div class="category-li-box"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+		<div class="page-header clearfix">
+			<h3 class='pull-left'>
+                <select name="" id="">
+                    <option value="전체">전체</option>
+                    <option value="입양">입양</option>
+                    <option value="봉사">봉사</option>
+                    <option value="리뷰">리뷰</option>
+
+                </select>
+                <button>글작성</button>
+            </h3>
+
+			<div style='margin-top: 30px' class="pull-right">
+				
+			</div>
+		</div>
+		
+		<div style='margin-top: 30px' class="pull-right">
+			<a>총 게시글 : ${totalCnt} 명 </a>
+		</div>
+		<!-- 조회결과를 출력하기 위한 표 시작 -->
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="info text-center " width="8%">게시글번호</th>
+					<th class="info text-center"  width="45%">제목</th>
+					<th class="info text-center"  width="15%">작성자</th>
+					<th class="info text-center"  width="12%">작성일</th>
+					<th class="info text-center"  width="5%">댓글수</th>
+					<th class="info text-center"  width="5%">좋아요</th>
+					<th class="info text-center"  width="5%">수정</th>
+					<th class="info text-center"  width="5%">삭제</th>
+				</tr>
+			</thead>
+			<tbody>
+                <tr>
+                    <td class="text-center"  width="8%">0</td>
+                    <td class="text-center"  width="45%">
+                        <a href="/ProfView.pf?profno=${prof.profno}">글 제목</a>
+                    </td>
+                    <td class="text-center" width="15%">작성자</td>
+                    <td class="text-center" width="12%">2022-11-11</td>
+                    <td class="text-center"  width="5%">0</td>
+                    <td class="text-center"  width="5%">0</td>
+                    <td class="text-center"  width="5%"><button style="background-color: lightseagreen; color: white;">수정</button></td>
+                    <td class="text-center"  width="5%"><button style="background-color: lightcoral; color: white;">삭제</button></td>
+                </tr>
+			</tbody>
+		</table>
+		<!--// 조회결과를 출력하기 위한 표 끝  -->
+		
+		<!-- 페이징 처리 -->
+		
+	</div>
+<main>
+
+</main>
+</body>
+</html>

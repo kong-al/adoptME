@@ -1,0 +1,223 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+
+div.FindId-Pw{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+div.main_icon span{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* font-family: 'Jua', sans-serif; */
+    font-size:15px;
+    font-weight: 800;
+}
+a.main_icon{
+    display: flex;
+    justify-content: center;
+}
+
+div.line{
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    height: 1px;
+    align-self: center;
+}
+
+/* 아이디 비밀번호 찾기 버튼 */
+div.find-main-buttons{
+    display:flex;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+div.find-main-buttons a{
+    width: 49%;
+    height: 100%;
+    font-size: 13px;
+    line-height: 15.6px;
+    color: rgb(170, 170, 170);
+    border: #f8f8f8;
+    background: #f8f8f8;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    text-align: center;
+}
+/* 클릭했을때 */
+div.find-main-buttons a{
+    width: 50%;
+    height: 100%;
+    font-size: 13px;
+    line-height: 15.6px;
+    color: rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(17, 17, 17);
+    font-weight: 800;
+    text-align: center;
+}
+
+div.find-main{
+    width: 375px;
+    height: 430px;
+}
+div.find-main_button button{
+    width: 150px
+}
+
+p.error-msg{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #30baff;
+    display: none;
+}
+/*입력창*/
+div.find-id-input input{
+    width: 230px;
+    height: 26px;
+    line-height: 1.2;
+    font-size:13px;
+    padding: 6px 12px;
+    background-color:#f8f8f8 ;
+    border: 1px solid #f8f8f8;     
+}
+div.find-id-input input:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid #30B9FF;    
+}
+/* 라벨 인풋박스 */
+div.find-id-input{
+    display: flex;
+    margin-top: 15px;
+}
+/* 라벨 인풋박스 */
+div label{
+    width: 79px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 40px;
+}
+  
+div.find-phonenum-input-detail{
+    display: flex;
+}
+div.find-id-pw{
+    padding: 0 20px;
+}
+/* 라벨 인풋박스 */
+div.find-id-phonenum-input{
+    display: flex;
+    margin-top: 15px;
+}
+/* 라벨 인풋박스 */
+div label{
+  width: 80px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+
+/* 인증번호 발송 */
+.join-phonenum-certify-button button{
+    width: 110px;
+    height: 30px;
+    color: #555555;
+    background-color: #30baff2c;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px 0 0 90px;
+    /* border: 1px solid #999;    */
+    border-radius: 5px;
+}
+div.find-certify-num{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* 인증번호입력 */
+div.find-id-certify-num-input input{
+    width: 230px;
+    height: 26px;
+    line-height: 1.2;
+    font-size:13px;
+    padding: 6px 12px;
+    background-color:#f9f9f9 ;
+    border: 1px solid #f9f9f9;     
+ 
+  }
+
+  .certify-input{
+    display: NONE;
+  }
+div.find-id-certify-num-input input:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid #30baff;    
+  }
+/* 확인 */
+div.find-button button{
+    width: 335px;
+    height: 46px;
+    color: #fff;
+    background-color: #30baff;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* 비밀번호찾기 상단멘트 */
+p.findpw-ment{
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-top: 40px;
+}
+/* 인증번호 입력창 */
+div.find-pw-id input{
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    line-height: 1.2;
+    font-size:13px;
+    padding: 6px 12px;
+    background-color:#f9f9f9 ;
+    border: 1px solid #f9f9f9;     
+}
+div.find-pw-id input:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid #30baff;    
+  }
+
+/* 비밀번호찾기 하단멘트 */
+span.findpw-ment-footer{
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    line-height: 20.8px;
+    position: relative;
+    margin-bottom: 0px;
+    white-space: normal;
+    word-break: normal;
+}
+
+p.Find-id-ment {
+    font-size: 11px;
+    color:#888888;
+}
+span{
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+

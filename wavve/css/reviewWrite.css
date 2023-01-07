@@ -1,0 +1,27 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a::after{
+    color: #333333;
+}
+
+.WriteBtn{
+    padding: 5px 15px;
+    background-color: #30B9FF;
+    border: 1px solid #30B9FF;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.table{
+    border-bottom: #333333;
+}

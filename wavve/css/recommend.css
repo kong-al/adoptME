@@ -1,0 +1,46 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main{
+    text-align: center;
+    height: 50px;
+    margin: 50px;
+    font-size: 30px;
+}
+form{
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    /* background-color: #30B9FF; */
+}
+form div{
+    
+}
+.menu{
+    height: 50px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.menu span{
+    font-size: 20px;
+}
+.menu div{
+    margin: 5px;
+}
+
+.submitBtn{
+    width: 250px;
+    height: 60px;
+    background-color: #30B9FF;
+    border: 1px solid #30B9FF;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}

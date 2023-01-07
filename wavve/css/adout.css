@@ -1,0 +1,104 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a::after{
+    color: #333333;
+}
+.adout{
+    padding-top: 25px;
+}
+div.adout-logo{
+    height: 80px;
+    width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0 ;
+}
+.adout-logo span{
+    font-size: 28px;
+    font-weight: bold;
+}
+.adout-category{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1050px;
+}
+.adout-imgs{
+    display: flex;
+    justify-content: space-around;
+    width: 1050px;
+    margin: 20px auto;
+}
+.img-text span{
+    font-size: 17px;
+}
+.adout-text{
+    margin: 10px 0px;
+}
+.age{
+    margin-top: -10px;
+}
+.adout-text span{
+    margin-right: 10px;
+}
+.name span{
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+
+.relative{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+.adout-img{
+    overflow: hidden;
+    width: 338px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.adout-img:hover{
+    transform: scale(1.05,1.05);
+}
+
+.love{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.adout-list-all{
+    display: flex;
+    margin: 0px;
+}
+.adout-all{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.adout-list{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    height: 24px;
+    margin-left: 8px;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+.list1::before{
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 10px;
+    margin-right: 8px;
+    background-color: rgb(226, 226, 226);
+}

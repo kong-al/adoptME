@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON'T BUY ADOPT ME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="css/mypage.css" rel="stylesheet" type="text/css" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/join.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <div class="top">
+                    <!-- 헤더 왼쪽상단 -->
+                    <div class="left-top">
+                        <div class="left-top-box">
+                            <a class="join" href="../join.html">회원가입</a>
+                            <div class="blank"></div>
+                            <a class="login" href="../login.html">로그인</a>
+                            <div class="blank"> </div>
+                            <a class="cscenter-name" href="../join.html">고객센터
+                                <span class="css-1o74ji9 eo4j3y50"></span>
+                            </a>
+                            <!-- <div class="cscenter-menu">
+                                <div class="cscenter-menu1">공지사항</div>
+                                <div class="cscenter-menu1">자주하는 질문</div>
+                                <div class="cscenter-menu1">1:1 문의</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- 헤더중간 -->
+                    <div class="middle">
+                        <!-- 로고 -->
+                        <a href="../index.html">
+                            <div class="logo">
+                                <img src="img/logo1.png" class="logo1">
+                            </div>
+                        </a>
+                        <!-- 검색창 -->
+                        <div class="search">
+                            <div class="search-input">
+                                <input id="gnb_search" placeholder="검색어를 입력해주세요" required=""  value="">
+                                <button class="dodbogy"></button>
+                            </div>
+                        </div>
+                        <!-- 장바구니 찜하기  -->
+                        <div class="jjim-cart">
+                            <button class="jjim" aria-label="찜하기" type="button"></button>
+                            <div class="cart1">
+                                <div> <button class="cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 카테고리 -->
+                <div id="category" class="category-box">
+                    <div class="category-box1">
+                        <div class="category-li-box"></div>
+                        <ul class="category-list">
+                            <li class="category-li">
+                                <a class="category-li-title" href="adout.html">입양</a>
+                            </li>
+                            <li class="category-li">
+                                <a class="category-li-title" href="volunteer.html">봉사</a>
+                            </li>
+                            <li class="category-li">
+                                <a class="category-li-title" href="review.html">입양후기</a>
+                            </li>
+                            <li class="category-li">
+                                <a class="category-li-title" href="event.html">이벤트</a>
+                            </li>
+                        </ul>
+                        <div class="category-li-box"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="myPage"> 
+            <div>
+                <div class="menuBar">
+                    <div><a href="">내정보</a></div>
+                    <div> <a href="">찜한목록</a></div>
+                    <div><a href="">내가 작성한 글</a></div>
+                    <div><a href="">내가 작성한 댓글</a></div>
+                    <div><a href="">추천목록</a></div>
+                </div>
+            </div>
+            <div>
+                <form name="join">
+                    <div class="main" style="margin-top: 0px;">
+                        <!-- 회원가입 -->
+                        <div>
+                            <div id="join-logo">내정보 수정</div>
+                            
+                        </div>
+                        <!-- 아이디 -->
+                        <div class="join-box" id="join-id">
+                            <div class="join-input">
+                                <label class="label" for="id">아이디</label>
+                                <div class="">
+                                    <input placeholder="아이디를 입력해주세요." required="" max="10000" maxlength="10000" type="text" id="id" class="" value="">
+                                    <p class="error-msg">6자리이상 16자리 이하로 입력해주세요.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- 비밀번호 -->
+                        <div class="join-box" id="join-pw">
+                            <div class="join-input">
+                                <label class="label" for="pw">비밀번호</label>
+                                <div class="">
+                                    <input placeholder="비밀번호 8자 이상" required="" max="10000" maxlength="10000" type="password" id="pw" class="" value="">
+                                    <p class="error-msg">비밀번호를 입력해주세요.</p>
+                                </div>
+                            </div>
+                            <div class="join-id-button"><button> 비밀번호 변경 </button></div>
+                        </div>
+                        <!-- 닉네임 -->
+                        <div class="join-box" id="join-nick">
+                            <div class="join-input">
+                                <label class="label" for="nick">닉네임</label>
+                                <div class="">
+                                    <input placeholder="닉네임을 입력해주세요." required="" max="16" maxlength="16" type="text" id="nick" class="" value="">
+                                    <p class="error-msg">닉네입을 입력해주세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 이름 -->
+                        <div class="join-box" id="join-name">
+                            <div class="join-input">
+                                <label class="label" for="name">이름</label>
+                                <div class="">
+                                    <input placeholder="반드시 실명을 입력해주세요." required="" max="10000" maxlength="10000" type="text" id="name" class="" value="">
+                                    <p class="error-msg">이름을 입력해주세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 연락처 -->
+                        <div class="join-box" id="join-phonenum">
+                            <div class="join-input">
+                                <label class="label" for="phonenum">연락처</label>
+                                <div class="">
+                                    <input placeholder="숫자만 입력해주세요" required="" max="10000" maxlength="10000" type="text" id="phonenum" class="" value="">
+                                    <p class="error-msg">연락처를 입력해주세요.</p>
+                                </div>
+                            </div>
+                       
+                        </div>
+                           
+                        <!-- 하단부 -->
+                        <div class="joinbutton">
+                            <button type="button" class="joinbutton">정보수정하기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

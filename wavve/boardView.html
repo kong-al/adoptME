@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON'T BUY ADOPT ME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/recommend.css" rel="stylesheet" type="text/css" />
+    <link href="css/boardView.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="top">
+                <!-- 헤더 왼쪽상단 -->
+                <div class="left-top">
+                    <div class="left-top-box">
+                        <a class="join" href="../join.html">회원가입</a>
+                        <div class="blank"></div>
+                        <a class="login" href="../login.html">로그인</a>
+                        <div class="blank"> </div>
+                        <a class="cscenter-name" href="../join.html">고객센터
+                            <span class="css-1o74ji9 eo4j3y50"></span>
+                        </a>
+                        <!-- <div class="cscenter-menu">
+                            <div class="cscenter-menu1">공지사항</div>
+                            <div class="cscenter-menu1">자주하는 질문</div>
+                            <div class="cscenter-menu1">1:1 문의</div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 헤더중간 -->
+                <div class="middle">
+                    <!-- 로고 -->
+                    <a href="../index.html">
+                        <div class="logo">
+                            <img src="img/logo1.png" class="logo1">
+                        </div>
+                    </a>
+                    <!-- 검색창 -->
+                    <div class="search">
+                        <div class="search-input">
+                            <input id="gnb_search" placeholder="검색어를 입력해주세요" required=""  value="">
+                            <button class="dodbogy"></button>
+                        </div>
+                    </div>
+                    <!-- 장바구니 찜하기  -->
+                    <div class="jjim-cart">
+                        <button class="jjim" aria-label="찜하기" type="button"></button>
+                        <div class="cart1">
+                            <div> <button class="cart"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 카테고리 -->
+            <div id="category" class="category-box">
+                <div class="category-box1">
+                    <div class="category-li-box"></div>
+                    <ul class="category-list">
+                        <li class="category-li">
+                            <a class="category-li-title" href="adout.html">입양</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="volunteer.html">봉사</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="review.html">입양후기</a>
+                        </li>
+                        <li class="category-li">
+                            <a class="category-li-title" href="event.html">이벤트</a>
+                        </li>
+                    </ul>
+                    <div class="category-li-box"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <!-- Page Wrapper -->
+       <div id="page-wrapper">
+   
+           <!-- Wrapper 시작 -->
+           <div id="wrapper">
+   
+               <!-- container 시작 -->
+               <div class="container" style="width: 62%;">
+                   <div class="inner">
+   
+                       <h1>카테고리</h1>
+                       <div class="top1">
+                           <h3>제목 </h3>
+                           <div class="name" style="font-size: 14px;">작성자</div>
+                           <div style="font-size: 14px;"></div>
+                           <div>
+                               <ul style="display: flex; justify-content: flex-end; font-size: 10px;">
+                                   <li><i class="bi bi-heart"></i></li>
+                                   <li><input type="button" value="글쓰기" class="primary"style="font-size: 12px !important;"></li>
+                                   <li><input type="button" value="목록" class="primary" style="font-size: 12px !important;"></li>
+                                    <li><input type="button" value="수정" style="font-size: 12px !important;"></li>
+                                   <li><input type="button" value="삭제" onclick="deletePost()" style="font-size: 12px !important;"></li>
+                               </ul>
+                           </div>
+                           <hr>
+                       </div>
+                       <div class="box">
+                            내용
+                       </div>
+                   </div>
+               </div>           
+               <!-- 댓글 -->
+               <div style="width: 62%; margin: 0 auto;">
+                   <hr>
+                   <header class="major" style="text-align: left;">
+                       <h3>Comment</h3>
+                   </header>
+                   <form method="post" action="/board/addReply.rp" class="combined"  id="replyForm" style="flex-direction: column; margin: 0; display: contents; font-size: small !important;">
+                       <input name="board_no" value="${board.board_no}" type="hidden">
+                       <input name="user_no" value="${userInfo.user_no}" type="hidden">
+                       <div style=" margin-bottom: 3%;">
+                           <div style="width: 100%;" >
+                               <textarea name="reply_content" id="content" placeholder="비속어를 사용하지 말아주세요." class="invert" rows="5"
+                               style="border-radius: 0; resize: none; font-size: small !important;"></textarea>
+                           </div>
+                           <div style="text-align: end;">
+                               <input id="register" type="button" class="primary" value="등록" style="font-size: 12px !important;" onclick="addReply()">
+                           </div>
+                       </div>
+                       <c:choose>
+                           <c:when test="${!empty replylist}">
+                               <c:forEach items="${replylist}" var="reply">
+                                       <input name="board_no" value="${board.board_no}" type="hidden">
+                                       <input name="user_no" value="${userInfo.user_no}" type="hidden">
+                                       <table>
+                                           <tr>
+                                               <td style="padding-left: 10px;"> 
+                                                   <textarea id="reply${reply.reply_no}"  name="" style="text-align: left; border: 0px; height: 85px; resize: none; font-size: small;" class="textarea" readonly > </textarea> 
+                                                   <a href="javascript:updateReply(${reply.reply_no});" style="display: none;" id="modifyBtn${reply.reply_no}">[수정]</a>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;
+                                                   <a href="javascript:updateReadonly('${userInfo.user_no}','${reply.user_no}',${reply.reply_no});" id="">[수정하기]</a>
+                                                   &nbsp;&nbsp;&nbsp;&nbsp;
+                                                   <a href="javascript:deleteReply('${userInfo.user_no}','${reply.user_no}',${reply.reply_no});">[삭제]</a>
+                                               </td>
+                                           </tr>	
+                                       </table>
+       <!-- 							</form> -->
+                               </c:forEach>
+                           </c:when>
+                       <c:otherwise>
+                           <form id="replies" class="combined"
+                                  style="flex-direction: column; margin: 0; display: contents; font-size: small !important;">
+                                <p style="width: fit-content;">댓글이 없습니다.</p>
+                           </form>
+                       </c:otherwise>
+                       </c:choose>
+                   </form>
+                </div>
+           </div>
+           <!-- container 끝 -->
+   
+   
+       </div>
+       <!-- Wrapper 끝 -->
+   
+    </main>
+</body>
+</html>
